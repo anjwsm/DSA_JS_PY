@@ -37,23 +37,43 @@
 
 // switch statement
 
-  var x=10;
+//   var x=10;
 
-// discrete (not continuous)
-  switch(x){
-    case 10 : {
-        console.log('You are too small kiddy');
-        break;       
-    }
-    case 16: {
-        console.log('Grow up dude');
-        break;
-    }
-    case 18:{
-        console.log('You age is just perfect, Welcome');
-        break;
-    }
-    default :{
-        console.log('Restricted');
-    }
-  }
+// // discrete (not continuous)
+//   switch(x){
+//     case 10 : {
+//         console.log('You are too small kiddy');
+//         break;       
+//     }
+//     case 16: {
+//         console.log('Grow up dude');
+//         break;
+//     }
+//     case 18:{
+//         console.log('You age is just perfect, Welcome');
+//         break;
+//     }
+//     default :{
+//         console.log('Restricted');
+//     }
+//   }
+
+
+let i =10;
+// for( ;true; ){
+//    console.log(i);
+//    i=i-2;
+// }
+
+
+// while(i>10){
+//   console.log(i);
+//   i=i-5;
+
+// }
+// console.log(i);
+// runs min once
+// do{
+//  console.log(i)
+//  i--;
+// }while(i>10);
