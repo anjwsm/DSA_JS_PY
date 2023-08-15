@@ -27,12 +27,12 @@
 // accessing with index
 // console.log(arr[2])
 
-// var sum =0;
-// for(var i=0;i<arr.length;i=i+1){
-//     sum =sum +arr[i];
+ //var sum =0;
+ //for(var i=0;i<arr.length;i=i+1){
+     //sum =sum +arr[i];
 
-// }
-// console.log(sum);
+ //}
+ // console.log(sum);
 
 
 // switch statement
@@ -77,3 +77,5 @@ let i =10;
 //  console.log(i)
 //  i--;
 // }while(i>10);
+const {maxInArray} =require('./FunctionCall');
+console.log(maxInArray([1,30,35,100]));

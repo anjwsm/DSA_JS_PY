@@ -25,7 +25,7 @@ function  findMax ( arr){
     let max = arr[0];
     for ( let i = 1; i< arr.length; i++){
         if (arr[i] > max){
-            max = arr[i];
+            max = arr[i];z
         }
     }
     return max ;
@@ -71,3 +71,30 @@ function printMatrix (matrix){
 
 }
 // printMatrix(mat)
+// defination 
+let x=25;
+const lolBanaya= function (){
+-
+    console.log(x);
+}
+// const double = (x)=>{ return 2*x;}
+ const double = x=>2*x;
+
+
+// execution ->fucntion  c all 
+lolBanaya();
+console.log(double(20))
+
+let obj ={name:'MUKESH',
+address:'Banglore',
+ hateYou:false,
+ citizenship:['in','pak','canada'],
+  netWorth:1000
+};
+obj.name='Ganesh';
+delete obj.name;
+console.log(obj.name);
+console.log(obj['name']);
+
+ 
+console.log(obj['citizenship'][2]);
