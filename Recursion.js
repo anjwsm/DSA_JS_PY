@@ -16,5 +16,16 @@ function fib(n){
     return fib(n-1) +fib(n-2);
 }
 
-console.log(fib(7));
+//console.log(fib(7));
 
+function sumOfNaturalNumbers(n){
+    if (n=0){
+        return 0;
+    } else {
+        return n + sumOfNaturalNumbers(n-1);
+    }
+}
+
+const n = 5;
+const sum = sumOfNaturalNumbers(n);
+console.log(sumOfNaturalNumbers(5))
