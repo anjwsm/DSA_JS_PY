@@ -33,15 +33,15 @@ function printMessage(n){
     if ( n % 3 == 0){
         console.log("Ok");
     }
-    else if (n % 5 ==0){
+  if (n % 5 ==0){
         console.log( "Bye");
     }
-    else if ( n % 15 == o){
+   if ( n % 15 == 0){
         console.log ("Ok Bye");
     }
 }
 
-// console.log(printMessage(6))
+// printMessage(15)
 
 var age = 20;
  
@@ -64,5 +64,19 @@ switch (age){
     }
 }
 
-console.log(age(15));
+// console.log(age(15));
+
+
+for (let i =1; i< 20; i++){
+    if(i <10) continue;
+    console.log(i);
+}
+for( let i =1 ; i<20;i++){
+    
+    console.log(i);
+
+    if(i==10) break;
+
+}
+
 
