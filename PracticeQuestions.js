@@ -30,53 +30,136 @@ function printNumbersBetween (x,y){
 
 
 function printMessage(n){
-    if ( n % 3 == 0){
-        console.log("Ok");
+    if ( n % 15 === 0){
+        console.log("Ok Bye");
     }
-  if (n % 5 ==0){
-        console.log( "Bye");
+  else if (n % 3 === 0){
+        console.log( "Ok");
     }
-   if ( n % 15 == 0){
-        console.log ("Ok Bye");
+   else if ( n % 5 === 0){
+        console.log ("Bye");
     }
 }
-
-// printMessage(15)
+ // printMessage(15);
+ // printMessage(9);
+ // printMessage(10);
+ // printMessage(30);
+ // printMessage(5);
+ // printMessage(12);
 
 var age = 20;
  
-switch (age){
-    case 15:{
-        console.log("Go to school");
-        break;
-    }
-    case 20:{
-        console.log(" Welcome");
-        break;
-    }
-    case 25: {
-        console.log("Welcome to the college");
-        break;
-    }
-    default :{
-        console.log("It is invalid");
-        break;
-    }
-}
+// switch (age){
+//     case 15:{
+//         console.log("Go to school");
+//         break;
+//     }
+//     case 20:{
+//         console.log(" Welcome");
+//         break;
+//     }
+//     case 25: {
+//         console.log("Welcome to the college");
+//         break;
+//     }
+//     default :{
+//         console.log("It is invalid");
+//         break;
+//     }
+// }
 
 // console.log(age(15));
 
 
-for (let i =1; i< 20; i++){
-    if(i <10) continue;
-    console.log(i);
-}
-for( let i =1 ; i<20;i++){
+// for (let i =1; i< 20; i++){
+//     if(i <10) continue;
+//     console.log(i);
+// }
+// for( let i =1 ; i<20;i++){
     
-    console.log(i);
+//     console.log(i);
 
-    if(i==10) break;
+//     if(i==10) break;
+
+// }
+
+
+
+
+function printPyramid(n){
+
+    for(let i=1;i<=n;i++){
+        
+        for(let j =1;j<=i;j++){
+        
+            process.stdout.write(' *');
+        } 
+        process.stdout.write('\n');
+    }
 
 }
 
+// printPyramid(8);
 
+function isPrime(n){
+    if (n <= 1){
+        return false ;
+    }
+    if (n <= 3){
+        return true;
+    }
+    if (n % 2 === 0 || n % 3 === 0){
+        return false;
+    }
+    for (let i =5 ; i*i <= n; i += 6){
+        if (n % i === 0 || n % (i+ 2)===0){
+            return false;
+        }
+    }
+    return true;
+}
+
+//console.log(isPrime(2));
+// console.log(isPrime(17));
+// console.log(isPrime(10));
+
+function isEven(n){
+    if (n % 2 === 0){
+        return true;
+    }
+    else return false;
+}
+// console.log(isEven(8));
+// console.log(isEven(11));
+
+function isOdd(n){
+    if (n % 2 !== 0){
+        return true;
+    }
+    else return false;
+}
+
+// console.log(isOdd(5));
+// console.log(isOdd(10));
+// console.log(isOdd(7));
+
+function isCompleteNumber(n){
+    if (n <= 1){
+        return false;
+    }
+    let sumOfDivisors =1 ;
+    for (let divisor = 2 ; divisor * divisor <= n ; divisor ++){
+        if ( n % divisor === 0 ){
+            sumOfDivisors += divisor;
+            if (divisor !== n / divisor){
+                sumOfDivisors += n / divisor;
+            }
+        }
+    }
+    return sumOfDivisors === n;
+}
+
+// console.log(isCompleteNumber(28));
+// console.log(isCompleteNumber(6));
+// console.log(isCompleteNumber(12));
+ 
