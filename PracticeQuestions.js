@@ -162,4 +162,30 @@ function isCompleteNumber(n){
 // console.log(isCompleteNumber(28));
 // console.log(isCompleteNumber(6));
 // console.log(isCompleteNumber(12));
+
+function printNumberPyramids(n){
+    for ( let i = 1; i <= n ; i ++){
+        let n = '';
+        for ( let j = 1 ; j <= i; j++)
+        n += i + ' ';
+    }
+    console.log(n);
+}
+// printNumberPyramids(5);
+
+function printPyramid(n){
+let currentNumber = 2;
+for (let i =1; i<= n; i++){
+        let rowNumbers ='';
+        for (let j= 1; j<= currentNumber ; j++){
+            rowNumbers += currentNumber + ' ';
+        }
+        console.log(rowNumbers);
+
+        currentNumber +=2;
+    }
+}
+
+printPyramid(5);
+
  
