@@ -155,36 +155,33 @@ function isOdd(n){
 // console.log(isOdd(10));
 // console.log(isOdd(7));
 
-function isCompleteNumber(n){
-    if (n <= 0){
-        return false;
-    }
-    let sumOfDivisors =0 ;
-    for (let i = 1 ; i <= n ; i++){
-        if ( n %  i === 0 ){
-            sumOfDivisors += i;
-            
-        }
-    }
-    return sumOfDivisors === 2*n;
-}
+// function isCompleteNumber(n){
+  //  if (n <= 0){
+   //     return false;
+  //  }
+  //  let sumOfDivisors =0 ;
+  //  for (let i = 1 ; i <= n ; i++){
+  //      if ( n %  i === 0 ){
+  //          sumOfDivisors += i;         
+     //   }
+   // }
+   // return sumOfDivisors === 2*n;
 
-console.log(isCompleteNumber(28));
-console.log(isCompleteNumber(6));
-console.log(isCompleteNumber(12));
+//}
 
-function printNumberPyramids(n){
-    for ( let i = 1; i <= n ; i ++){
-        let n = ' ';
-        for ( let j = 1 ; j <= i; j++)
-        n += i + ' ';
-    }
-    console.log(n);
-}
+
+// function printNumberPyramids(n){
+ //   for ( let i = 1; i <= n ; i ++){
+ //       let n = ' ';
+  //      for ( let j = 1 ; j <= i; j++)
+   //     n += i + ' ';
+  //  }
+  //  console.log(n);
+// }
 
 // printNumberPyramids(5);
 
-function printPyramid(n){
+//  function printPyramid(n){
 for (let i =1; i<= n; i++){
         let n ='';
         for (let j= 1; j<= i ; j++){
@@ -194,22 +191,63 @@ for (let i =1; i<= n; i++){
 
         i +=2;
     }
-}
+// }
 
 //printPyramid(5);
 
- function printNumberPyramid(n){
+ // function printNumberPyramid(n){
 
-    for(i=1 ; i<= n; i++){
-        for (let j=1 ; j<= n-i; j++){
-            process.stdout.write(' ');
-        }
-        for (let j =1 ; j <= i; j++){
-            process.stdout.write(String(i));
-        }
-        process.stdout.write('\n');
+   //  for(i=1 ; i<= n; i++){
+    //    for (let j=1 ; j<= n-i; j++){
+      //      process.stdout.write(' ');
+       // }
+       // for (let j =1 ; j <= i; j++){
+      //      process.stdout.write(String(i));
+       // }
+      //  process.stdout.write('\n');
+    // }
+// }
+ // printNumberPyramid(5);
+
+
+
+
+// function printPyramids(n){
+ for (i=1 ; i <= n ; i++){
+    for(let j = 1 ; j <= 2 *i-1 ; j ++){
+        process.stdout.write('*');
     }
+    process.stdout.write('\n');
+ }
+// }
+// printPyramids(5);
+
+ // function pyramid(n){
+  //  for (i = 1 ; i <= n ; i ++){
+    //    for( j = 1 ; j <= n ; j++){
+     //       process.stdout.write('*');
+      //  }
+    // process.stdout.write('\n');
+   // }
+// }
+// pyramid(5)
+
+// let n= 5;
+// for (i = 1; i <= n; i++){
+  //  for(j = 1; j <= i; j++){
+    //    process.stdout.write(String(Math.pow(i,j)));
+   //  }
+  //  process.stdout.write('\n');
+// }
+
+let n = 5 ;
+for ( i = 1 ; i <= n ; i++){
+    let aCode = A.charCodeA+(0);
+    for(j=1 ; j <= i ; j++){
+        process.stdout.write(String.fromCharCode(aCode + i - 1));
+    }
+    process.stdout.write ('\n');
 }
- printNumberPyramid(5);
+
 
  
