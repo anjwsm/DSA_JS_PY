@@ -240,14 +240,16 @@ for (let i =1; i<= n; i++){
   //  process.stdout.write('\n');
 // }
 
-let n = 5 ;
-for ( i = 1 ; i <= n ; i++){
-    let aCode = A.charCodeA+(0);
-    for(j=1 ; j <= i ; j++){
-        process.stdout.write(String.fromCharCode(aCode + i - 1));
-    }
-    process.stdout.write ('\n');
-}
+// let n = 5 ;
+// for ( i = 1 ; i <= n ; i++){
+   // let aCode = A.charCodeA+(0);
+   // for(j=1 ; j <= i ; j++){
+    //    process.stdout.write(String.fromCharCode(aCode + i - 1));
+   // }
+   //  process.stdout.write ('\n');
+// }
+
+
 
 
  
