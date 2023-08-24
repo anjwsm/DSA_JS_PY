@@ -22,9 +22,40 @@
 // 'b' in object1
 // '20' in object1
 
-const Employee = {
-    firstName : 'John',
-    lastName :'Doe',
-} ;
-delete Employee.firstName;
-console.log(Employee.firstName);
+// const Employee = {
+  //  firstName : 'John',
+   // lastName :'Doe',
+}
+// } ;
+//delete Employee.firstName;
+// console.log(Employee.firstName);
+
+
+
+// const animals = ['dog','horse' , 'lion','cat'];
+// animals.push('cow', 'goat');
+// console.log(animals);
+// console.log(animals.join());
+
+
+// const array1 = [5,12,8.,976,55];
+// const found = array1.find((element) => element > 10);
+// console.log(found);
+
+
+// const array1 = [1,3,5,7];
+// const map1 = array1.map((x) => x*2);
+// console.log(map1);
+
+
+
+
+
+// const str = 'Apple is red';
+// const words = str.split(' ');
+// console.log(words[2]);
+// const chars= str.split('');
+// console.log(chars[7]);
+
+
+
