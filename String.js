@@ -57,5 +57,12 @@
 // const chars= str.split('');
 // console.log(chars[7]);
 
+// const array1 = [ 'a' , 'b', 'c'];
+// array1.forEach((element) => console.log(element));
+ 
 
+// const array = [1,2,3,4];
+// const initialValue = 0 ;
+// const sumWithInitial = array1.reduce((accumulator, currentValue ) => accumulator + currentValue , initialValue);
+// console.log(sumWithInitial);
 
