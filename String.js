@@ -61,8 +61,11 @@
 // array1.forEach((element) => console.log(element));
  
 
-// const array = [1,2,3,4];
-// const initialValue = 0 ;
-// const sumWithInitial = array1.reduce((accumulator, currentValue ) => accumulator + currentValue , initialValue);
-// console.log(sumWithInitial);
+const array = [1,2,3,4];
+
+const sumWithInitial = array.reduce((accumulator, currentValue ) => {
+    return accumulator + currentValue ;
+ } , 0 );
+ // array.reduce (callback , initialvalue)
+console.log(sumWithInitial);
 
