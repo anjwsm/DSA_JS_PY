@@ -1,34 +1,46 @@
-// let text = "Hello world";
-// let length = text.lenth ;
-// let result = text.slice(0,5);
+//Length , slice  and character code:
 
-// let code = text.charCodeAt(0);
-// let char = String.fromCharCode(65);
+//let text = "Hello world";
+// let length = text.length ;
+// console.log(length)
+
+// let result = text.slice(0,5);
+// console.log(result)
+
+//  let code = text.charCodeAt(3);
+//  console.log(code);
+
+//  let char = String.fromCharCode(65);
+//  console.log(char);
+
+
 
 // let text = "Visit Microsoft ";
 // let result = text.replace("Microsoft", "W3Schools");
+// console.log(result) ;
+
 
 // const fruits = [ "Banana", " Orange", "Apple", "Mango"]
 // const keys = Object.keys(fruits);
-// console.log(Object.keys(fruits));
+// console.log(keys);
+
 // const object1= {
-   // a: 'Anjali',
-   // b: '20',
-//c: 'true',
-//}
+//    a: 'Anjali',
+//    b: '20',
+// c: 'true',
+// }
 // console.log(Object.values(object1));
+// console.log(Object.keys(object1)); 
 // console.log(Object.entries(object1));
-// 'a' in object1
-// 'b' in object1
-// '20' in object1
+
 
 // const Employee = {
-  //  firstName : 'John',
-   // lastName :'Doe',
-}
+//    firstName : 'John',
+//    lastName :'Doe',
+
 // } ;
-//delete Employee.firstName;
-// console.log(Employee.firstName);
+// delete Employee.firstName;
+// console.log(Employee);
 
 
 
@@ -38,34 +50,99 @@
 // console.log(animals.join());
 
 
-// const array1 = [5,12,8.,976,55];
+// const array1 = [5  , 12 , 8 , 97 , 55];
 // const found = array1.find((element) => element > 10);
 // console.log(found);
 
 
+//Mapping of array:
 // const array1 = [1,3,5,7];
 // const map1 = array1.map((x) => x*2);
 // console.log(map1);
 
 
-
-
-
+//Splitting of words and characters from a string :
 // const str = 'Apple is red';
 // const words = str.split(' ');
 // console.log(words[2]);
 // const chars= str.split('');
 // console.log(chars[7]);
 
-// const array1 = [ 'a' , 'b', 'c'];
-// array1.forEach((element) => console.log(element));
+
+//  const array1 = [ 'a' , 'b', 'c'];c
+//  array1.forEach((element) => console.log(element));
+
  
+//Reduce method for arrays : here , initially acccumulator is 0 and currentValue is 1
+// const array = [1,2,3,4];
+// const sumWithInitial = array.reduce((accumulator, currentValue ) => {
+//     return accumulator + currentValue ;
+//  } , 0 );
+// console.log(sumWithInitial);
 
-const array = [1,2,3,4];
 
-const sumWithInitial = array.reduce((accumulator, currentValue ) => {
-    return accumulator + currentValue ;
- } , 0 );
- // array.reduce (callback , initialvalue)
-console.log(sumWithInitial);
 
+//Function to find the length of an array and string :
+
+// function countLength(input){
+//    if( typeof input === 'string'){
+//       return input.length ;
+//    } else if 
+//    (Array.isArray(input)){
+//       return input.length
+//    }
+// }
+
+// let str = countLength("Anjali");
+// console.log(str)
+
+// let arr = countLength(['11' , '3' , '78' , "anj"])
+// console.log(arr)
+
+
+// function getLength(array){
+//    let count = 0 ;
+//    for(let element of array){
+//       count++ ;
+//    }
+//    return count ;
+// }
+
+// function findLength(input){
+//    let count = 0 ;
+//    for(const value in input){
+//       count++ ;
+//    }
+//    return count ;
+// }
+// let arr = ['67' , '543' , 'utr']
+// let str = "Anjali"
+// console.log(findLength(arr))
+
+
+
+
+// function checkElementWithForLoop (array , key){
+//    for ( i = 0 ; i < array.length ;i++){
+//       if (array[i] === key){
+//          return true ;
+//       }
+
+//    }
+//    return false ;
+// }
+
+function checkElementWithFind( array , key){
+   let result = array.find((element) => element === key) ;
+   if (result === key){
+      return true;
+   }
+   return false ;
+}
+let arr = ['1' , '4' , '5' , '7' ,'9'];
+let key = '9'
+
+console.log(checkElementWithFind(arr , key))
+const arr2 = [5, 393, 30, 2];
+const key2 =  3
+console.log(checkElementWithFind(arr2, key2));
