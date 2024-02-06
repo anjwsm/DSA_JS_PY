@@ -132,17 +132,34 @@
 //    return false ;
 // }
 
-function checkElementWithFind( array , key){
-   let result = array.find((element) => element === key) ;
-   if (result === key){
-      return true;
-   }
-   return false ;
-}
-let arr = ['1' , '4' , '5' , '7' ,'9'];
-let key = '9'
+// function checkElementWithFind( array , key){
+//    let result = array.find((element) => element === key) ;
+//    if (result === key){
+//       return true;
+//    }
+//    return false ;
+// }
+// let arr = ['1' , '4' , '5' , '7' ,'9'];
+// let key = '9'
 
-console.log(checkElementWithFind(arr , key))
-const arr2 = [5, 393, 30, 2];
-const key2 =  3
-console.log(checkElementWithFind(arr2, key2));
+// console.log(checkElementWithFind(arr , key))
+// const arr2 = [5, 393, 30, 2];
+// const key2 =  3
+// console.log(checkElementWithFind(arr2, key2));
+
+// function printSquare(n){
+//    let content =''
+//    for (i=1 ; i<= n ; i++ ){
+//       // process.stdout.write(String(i))
+//       // process.stdout.write(i.toString())
+//       // process.stdout.write(i.toString())
+//       for(j=1 ; j <= n ; j++){
+//          content=content+ ' *'  // stirng 
+//        }
+//        content+='\n'
+      
+//    }
+//    console.log(content)
+  
+// }
+// printSquare(5);
