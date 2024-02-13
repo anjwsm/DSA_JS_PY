@@ -163,3 +163,236 @@
   
 // }
 // printSquare(5);
+
+
+// function printTriangle(n){
+//     for( i = 1 ; i<= n ; i++){
+//         for( j = 1 ; j <= i ; j++){
+//           process.stdout.write(" * ")
+//         }
+//         process.stdout.write("\n")
+//     }
+// }
+
+// printTriangle(5);
+
+// function printInverseTriangle(n){
+//     for ( i = n  ; i >= 1 ; i--){
+//         for ( j= i ; j >=1  ; j--){
+//             process.stdout.write("* ")
+//         }
+//          process.stdout.write("\n")
+//     }
+// }
+
+// printInverseTriangle(5);
+
+
+// function printPyramid(n){
+//     let m = 1;
+//     for( i = 1 ;  i <= n  ; i++){
+//         for ( k = 1 ; k <= n - i ; k++){
+//             process.stdout.write("  ")
+//         }
+//         for( j=1 ; j <= m ; j++){
+//             process.stdout.write("* ")
+            
+//         }
+//         process.stdout.write("\n");
+//         m = m + 2 ;
+
+//     }
+// }
+
+// printPyramid(5);
+
+
+// function printInversePyramid(n){
+//     let m = (n * 2) - 1 ;
+
+//     for ( i = n ; i >= 1 ; i--){
+//         for (k=1 ; k <= n - i ; k++){
+//             process.stdout.write("  ")
+//         }
+//         for( j = 1 ; j <= m ; j++ ){
+//             process.stdout.write("* ")
+//         }
+//         m = m-2 ;
+//         process.stdout.write("\n")
+//     }
+// }
+
+// printInversePyramid(5);
+
+// function numberPyramid(n){
+//     for(i=1 ; i<= n ; i++){
+
+//         for( j=1 ; j <= i ; j++){
+//             process.stdout.write(j.toString())
+//             process.stdout.write(" ")
+//         }
+
+//         process.stdout.write("\n")
+//     }
+// }
+
+// numberPyramid(5);
+
+
+
+// function inverseNumberPyramid(n){
+//     for(i=n ; i >= 1 ; i--){
+//         for( j=1 ; j <= i ; j++){
+//             process.stdout.write(j.toString())
+//             process.stdout.write(" ")
+//         }
+
+//         process.stdout.write("\n")
+//     }
+
+// }
+// inverseNumberPyramid(5)
+
+
+function hollowPyramid(n){
+    for(i=1 ; i <= n ; i++){
+        for( j=1 ; j <= i ; j++){
+            if ( j == 1 || i == n || j == i){
+                process.stdout.write("*")
+            } else {
+                process.stdout.write(" ")
+            }
+        }
+        
+        process.stdout.write("\n")
+    }
+ }
+// hollowPyramid(6)
+
+function hollowNumberPyramid(n){
+    for (i=1 ; i <= n ; i++){
+        for (j=1 ; j <= i ; j++){
+            if( j == 1 || i == n || j == i){
+                process.stdout.write(j.toString())
+            }
+            else {
+                process.stdout.write(" ")
+            }
+        }
+        process.stdout.write("\n")
+    }
+}
+// hollowNumberPyramid (6);
+//  'A'.charCodeAt(0)
+//  String.fromCodePoint(65)
+
+
+
+function alphabetPyramid(n){
+    for(i=1 ; i<= n ; i++){
+        for(j=1 ; j<= i ; j++){
+            process.stdout.write(String.fromCharCode(i + 64))
+        }
+        process.stdout.write("\n")
+    }
+}
+
+//alphabetPyramid(5)
+
+function inverseAlphabetPyramid(n){
+    for(i=1 ; i<=n ; i++){
+        for(k=1 ; k <= n-i ; k++){
+            process.stdout.write(" ")
+        }
+        for(j=1 ; j<=i ; j++){
+            process.stdout.write(String.fromCharCode(i+64))
+           
+        }
+        process.stdout.write("\n")
+    }
+
+}
+// inverseAlphabetPyramid(5);
+
+function evenNumberPyramid(n){
+    for(i=1 ; i<= n ; i++){
+        for (j=1 ; j<=i ; j++){
+            const evenNumber = 2 * i;
+            process.stdout.write(evenNumber.toString() + " ")
+        }
+        process.stdout.write("\n")
+    }
+}
+
+// evenNumberPyramid(5);
+
+function simplePyramid(n){
+    for(i=1 ; i<= n ; i++){
+        for(k=1 ; k<= n-i ; k++){
+            process.stdout.write(" ")
+        }
+        for(j=1 ; j <= i ; j++){
+            process.stdout.write("* ")
+        }
+        process.stdout.write("\n")
+    }
+}
+
+// simplePyramid(5)
+
+function simpleNumberPyramid(n){
+    let currentNumber = 1;
+    for(i=1 ; i<= n ; i++){
+        for(j=1 ; j <= i ; j++){
+      
+            process.stdout.write(currentNumber.toString() + " ")
+            currentNumber++;
+        }
+        process.stdout.write("\n")
+    }
+}
+// simpleNumberPyramid(4)
+
+function xPyramid(n){
+   
+    let u = (n * 2) - 1 ;
+    let d=3 ;
+  
+    for( let i=n ; i>= 1 ; i--){
+        for ( let  k=1 ; k <= n-i ; k++){
+            process.stdout.write(" ")
+        }
+        for(let  j=1 ; j<= u ; j++){
+            process.stdout.write("*")
+        }
+        u -= 2 ;
+        process.stdout.write("\n")
+    }
+
+    for( let  i=1 ; i <= n-1 ; i++){
+        for ( let  k=1 ; k<= n-i-1 ; k++){
+            process.stdout.write(" ") ;
+        }
+        for( let  j=1 ; j<=d ; j++){
+            process.stdout.write("*") ;
+        }
+        process.stdout.write("\n") ;
+        d += 2 ;
+    }
+}
+
+// xPyramid(4);
+
+
+function reverseString(inputString){
+    let reversedString = ' ' ;
+    for( i = inputString.length - 1; i>=0 ; i--){
+        reversedString += inputString[i];
+    }
+    return reversedString ;
+}
+
+let originalString = "anjali" ;
+console.log(reverseString(originalString) )
+
+
