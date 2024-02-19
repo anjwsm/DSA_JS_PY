@@ -380,5 +380,5 @@ function printPattern(N) {
     }
 }
 
-printPattern(4) ;
+printPattern(5) ;
 

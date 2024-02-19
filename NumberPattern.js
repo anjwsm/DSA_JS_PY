@@ -90,4 +90,19 @@ function printPrimeTrianle(n) {
     process.stdout.write("\n");
   }
 }
-printPrimeTrianle(5);
+// printPrimeTrianle(5);
+function multiplyTable(n){
+  for(i=1 ; i<=10 ; i++){
+    process.stdout.write((n*i).toString() + ' ');
+  }
+}
+
+// multiplyTable(9)
+function nthTerm(A1 , Al , n){
+   let d = Al-A1 ;
+   let An = A1 + (n-1)*d ;
+  process.stdout.write(An.toString());
+
+}
+
+nthTerm(2,3,5)
