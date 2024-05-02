@@ -133,53 +133,49 @@ function inverseSimpleOddPyramid(n) {
 
 //Function to print a simple hollow right angled triangle :
 
-function hollowRightAngledTriangle1(n){
-    for(i=1 ; i <= n ; i++){
-        for (j=1 ; j<= i ; j++){
-            if( j==1 || j == i || i==n){
-                process.stdout.write("*");
-            } else {
-                process.stdout.write(" ");
-            }
-        }
-        process.stdout.write("\n");
+function hollowRightAngledTriangle1(n) {
+  for (i = 1; i <= n; i++) {
+    for (j = 1; j <= i; j++) {
+      if (j == 1 || j == i || i == n) {
+        process.stdout.write("*");
+      } else {
+        process.stdout.write(" ");
+      }
     }
+    process.stdout.write("\n");
+  }
 }
 // hollowRightAngledTriangle1(7);
 
 //Function to print a hollow inverse pyramid :
 
-function hollowInversePyramid(n){
- 
-  for(i=n ; i>=1 ; i--){
-    for(k=1 ; k <= n-i ; k++){
+function hollowInversePyramid(n) {
+  for (i = n; i >= 1; i--) {
+    for (k = 1; k <= n - i; k++) {
+      process.stdout.write(" ");
+    }
+    for (j = 2 * i - 1; j >= 1; j--) {
+      if (j === 2 * i - 1 || j === 1 || i === n) {
+        process.stdout.write("*");
+      } else {
         process.stdout.write(" ");
+      }
     }
-    for (j = 2*i -1 ; j >= 1; j--) {
-        if (j === 2 * i - 1 || j === 1 || i === n) {
-            process.stdout.write("*");
-        } else {
-            process.stdout.write(" ");
-        }
-       
-    }
-   
-    process.stdout.write("\n");
 
+    process.stdout.write("\n");
   }
 }
 // hollowInversePyramid(5)
 
-function tiltedRhombus(n){
-    for(i= 1; i <= n ; i++){
-        for(k=1 ; k<= n-i ; k++){
-            process.stdout.write(" ");
-        }
-        for(j=1 ; j<=n ; j++){
-            process.stdout.write("* ");
-        }
-        process.stdout.write("\n");
+function tiltedRhombus(n) {
+  for (i = 1; i <= n; i++) {
+    for (k = 1; k <= n - i; k++) {
+      process.stdout.write(" ");
     }
+    for (j = 1; j <= n; j++) {
+      process.stdout.write("* ");
+    }
+    process.stdout.write("\n");
+  }
 }
 // tiltedRhombus(5);
-
